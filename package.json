@@ -4,8 +4,8 @@
 	"description": "discord jukjeon-bot",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node index.js"
+		"start": "node index.js",
+		"deploy:commands": "node deploy-commands.js"
 	},
 	"author": "littlebb326@gmail.com",
 	"license": "ISC",
