@@ -12,13 +12,13 @@ const curDateType =
 		: dateType[(daysDifferent % 4) + 4];
 const replyText = `
 오늘의 날짜는 ${curDate.format('YYYY년 MM월 DD일')} 입니다.
-오늘 영석이의 근무는 ${curDateType} 입니다.
+오늘 영석이의 근무는 '${curDateType}' 입니다.
 `;
 
 module.exports = {
 	data: new SlashCommandBuilder()
-		.setName('sys')
-		.setDescription('get work day of SYS'),
+		.setName('송영석')
+		.setDescription('오늘 영석이의 근무를 확인합니다.'),
 	async execute(interaction) {
 		await interaction.reply(replyText);
 	},
